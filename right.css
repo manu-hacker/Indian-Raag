@@ -1,0 +1,19 @@
+*{
+	margin: 1px;
+	padding: 1px;
+}
+.text1{
+	font-weight: bold;
+	color:orange;
+	font-size: 20px;
+}
+.bgimage{
+	background-image:url("ww.jpg");
+}	
+.font{
+	color:white;
+	font-size: 50px;
+}
+.text{
+	color:white;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+	padding:0px;
+    margin:0px;
+   
+font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+body{
+	background-image:url("bg5.jpg");
+    background-repeat:no-repeat;
+    width: 100%;
+    height:all;
+    background-size: 100% 100%;
+}
+.menu{
+height: 100px;
+width: 100%;
+background-color:rgba(0,0,0,0.5);
+}
+.leftmenu{
+width: 20%;
+height: 100px;
+float: left;
+}
+.leftmenu h3 {
+padding-top:35px;
+font-size:30px;
+padding-left: 25px;
+font-family: 'Fjalla One', sans-serif;
+color: orange;
+}
+.rightmenu{
+width: 75%;
+height: 100px;
+float: right;
+}
+
+.rightmenu li {
+	list-style: none;
+	display: inline-block;
+	margin: 10px;
+list-style: none;
+font-size: 22px;
+margin-top: 30px;
+color:white;
+margin-left:35px;
+	
+}
+.rightmenu li a{
+	color:tomato;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display:none;
+	position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    min-width: 50px;
+    margin-left:-23px; 
+    border-bottom-right-radius:20px;
+     border-bottom-left-radius:20px;
+   margin-top:10px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1; 
+}
+.dropdown-content a{
+	color:white;
+	display: block;
+	text-decoration: none;
+	padding: 12px 16px;
+}
+.dropdown-content a:hover { background-color: (#ddd) }
+.dropdown:hover .dropdown-content {display: block}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.rightmenu  ul li .dropdown-content a:hover{
+background-color: orange;
+color: black;
+}
+
+.dropdown3{
+	display: inline-block;
+position:relative;
+}
+.dropdown-content3{
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	position:absolute;
+	min-width: -50px;
+	margin-top: 13px;
+	box-shadow: 0px 18px 16px 0px  rgba(0,0,0,0.2);;
+	 border-bottom-right-radius:20px;
+     border-bottom-left-radius:20px;
+margin-left:-60px;
+}
+.dropdown-content3 a{
+	color: white;
+	display: block;
+text-decoration: none;
+padding: 12px 16px;
+}
+
+.dropdown-content3 a:hover { background-color: (#ddd) }
+.dropdown3:hover .dropdown-content3 {display: block}
+.dropdown3:hover .dropbtn3{background-color: #3e8e41;}
+.rightmenu  ul li  .dropdown-content3  a:hover{
+background-color: orange;
+color: black;
+}
+h3{
+	font-size: 25px;
+	color: slateblue;
+}
+p{
+	font-size: 20px;
+	color: white;
+}
+.head{
+    text-align: center;
+	font-size: 75px;
+	color:#66004d;
+	font-family: 'Germania One', cursive;
+text-transform:uppercase;
+display:block;
+animation:text 3s 1;
+
+}
+@keyframes text {
+	0%{
+		color:black;
+		margin-left:-40px;
+	}
+30%{
+	letter-spacing:25px;
+	margin-left:-40px;
+}
+85%{
+	letter-spacing:8px;
+	margin-left:-40px;
+}
+}
+.button{
+	width:60px;
+	height:60px;
+	text-align:center;
+line-height:60px;
+color:#fff;
+font-size:20px;
+text-transform:uppercase;
+text-decoration:none;
+box-sizing:border-box;
+background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+background-size:400%;
+border-radius:30px;
+float:right;
+z-index:1;
+}
+.button:hover
+{
+	animation:animate 8s linear infinite;
+}
+@keyframes animate
+{
+	0%
+	{
+background-position:0;
+	}
+	100%
+	{
+background-position:400%;
+	}
+}
+.container:before{
+	content:absolute;
+	top:-5px;
+	bottom:-5px;
+	right:-5px;
+	left:-5px;
+	z-index:-1;
+background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+background-size:400%;
+border-radius:40px;
+filter:blur(20px);
+opacity:0px;
+transition:0.5s;
+}
+.container:hover:before
+{
+	filter:blur(20px);
+opacity:1;
+	animation:animate 8s linear infinite;
+}
+.bulbul{
+	font-size: 25px;
+}
+.tune{
+	font-size: 35px;
+	text-align: center;
+}
+.bg1{
+		background-image:url("Image/bg.jpg");
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}
+
+		
+</style>
+</head>
+<body>
+	<div  class="menu">
+			<div class="leftmenu"><h3>SWARBHARTIY</h3></div>
+		
+		<div class="rightmenu">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="raag.html">Raag</a></li>
+			<div class="dropdown">
+			<li class="dropbtn"><a href="#">Instrument</a>
+
+								<div class="dropdown-content">
+			                        <a href="instrument/bulbultarang.html">Bulbultarang</a>
+                                     <a href="instrument/dhol.html">Dhol</a>
+                                     <a href="instrument/ektara.html">Ektara</a>
+                                     <a href="instrument/glassharp.html">Glassharp</a>
+                                     <a href="instrument/pungi.html">Pungi</a>
+                                     <a href="instrument/sarod.html">Sarod</a>
+                                     <a href="instrument/sitar.html">Sitar</a>
+                                     <a href="instrument/veena.html">Veena</a>
+                                      <a href="instrument/bansuri.html">Bansuri</a>                 
+                                      <a href="instrument/tabla.html">Tabla</a>               
+                                    </div>
+
+			</li>
+		</div>
+	
+			<div class="dropdown3"><li class="dropbtn3"><a href="">Song</a>
+<div class="dropdown-content3">
+<a href="song/petriotic.html">Petriotic</a>
+<a href="song/devotional.html">Devotional</a>
+<a href="song/instrumental.html">Instrumental</a>
+</div>
+			</li></div>
+			<li><a href="gallery/gallery.html">Gallery</a>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="https://docs.google.com/forms/d/1dQtDYrsWTHIUmy6tgLlAl78RQQ8hYILo_GAlfdJVnnc/edit">Feedback</a></li>
+		</ul>
+	</div>
+		
+	</div>
+
+<div class="container">
+<p><h2 class="head">The Great India</h2></p></div>
+<div>
+	<div class="text4">
+<h3 align="center">Hindustani Gharanas</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There is a rich tradition of Gharanas in classical Hindustani music. The music Gharanas are also called styles. These schools or Gharanas have their basis in the traditional mode of musical training and education. Every Gharana has its own distinct features.
+Hindustani School</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hindustani classical music is an Indian classical music tradition. It originated in North India around 13th and 14th centuries. In contrast to Carnatic music, the other main Indian classical music tradition from South India, the Hindustani classical music was not only influenced by ancient Hindu musical traditions and Vedic philosophy but also by the Persian elements.</p>
+<h3 align="center">Music Glossary</h3></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Achal Swaras are the fixed swaras of the seven musical notes. Sa and Pa are the achal swaras of the Indian classical music. The term Arohi, also known as Arohana and Aroh, is used to define the ascending melody in music. </p>
+<h3 align="center">Indian Music Instruments</h3></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sitar is of the most popular music instruments of North India. The Sitar has a long neck with twenty metal frets and six to seven main cords. Below the frets of Sitar are thirteen sympathetic strings which are tuned to the notes of the Raga. A gourd, which acts as a resonator for the strings is at the lower end of the neck of the Sitar. </p> 
+<h3 align="center">Carnatic Music</h3></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carnatic music or Carnatic sangeet is the south Indian classical music. Carnatic music has a rich history and tradition and is one of the gems of world music. Carnatic Sangeet has developed in the south Indian states of Tamil Nadu, Kerala, Andhra Pradesh and Karnataka.</p>
+<h3 align="center">Hindustani Gharanas</h3></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There is a rich tradition of Gharanas in classical Hindustani music. The music Gharanas are also called styles. These schools or Gharanas have their basis in the traditional mode of musical training and education. Every Gharana has its own distinct features.</p>
+<h3 align="center">Hindustani School</h3></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hindustani classical music is an Indian classical music tradition. It originated in North India around 13th and 14th centuries. In contrast to Carnatic music, the other main Indian classical music tradition from South India, the Hindustani classical music was not only influenced by ancient Hindu musical traditions and Vedic philosophy but also by the Persian elements.</p>
+<h3 align="center">Music Glossary</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Achal Swaras are the fixed swaras of the seven musical notes. Sa and Pa are the achal swaras of the Indian classical music. The term Arohi, also known as Arohana and Aroh, is used to define the ascending melody in music.</p> 
+<h3 align="center">Indian Music Instruments</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sitar is of the most popular music instruments of North India. The Sitar has a long neck with twenty metal frets and six to seven main cords. Below the frets of Sitar are thirteen sympathetic strings which are tuned to the notes of the Raga. A gourd, which acts as a resonator for the strings is at the lower end of the neck of the Sitar.</p> 
+<h3 align="center">Carnatic Music</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carnatic music or Carnatic sangeet is the south Indian classical music. Carnatic music has a rich history and tradition and is one of the gems of world music. Carnatic Sangeet has developed in the south Indian states of Tamil Nadu, Kerala, Andhra Pradesh and Karnataka.</p>
+
+<h3 align="center">Indian Film Music</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of the most popular Indian music forms is the Filmi music. Hindi film industry, popularly known as Bollywood, along with Indian regional film industries, produces thousands of films a year, most of which are musicals and feature elaborate song and dance numbers.</p>
+Indian Fusion Music</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fusion is not a very old trend in Indian music. Fusion trend is said to have begun with Ali Akbar Khan's 1955 performance in the United States. Indian fusion music came into being with rock and roll fusions with Indian music in the 1960s and 1970s.</p>
+<h3 align="center">Ghazals</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ghazal is a common and popular form of music in Indian and Pakistan. Strictly speaking, it is not a musical form at all but a poetic recitation. However, today it is commonly conceived of as an Urdu song whose prime importance is given to the lyrics. Ghazal traces its roots in classical Arabic poetry.</p> 
+<h3 align="center">Folk Music</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India is a land of cultural diversities. Every region in India has its own form of folk music. This rich tradition of folk music is very much alive in not just rural India, but also in some metros. Though one may say that music has acquired a totally different definition with the arrival of pop culture and new age cinema, there are many who would beg to differ. 
+<h3 align="center">Shayari</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shayari or rhyming poetry basically comprises of a couplet known as Sher. This is the way that this unique and beautiful form of poetry derives the name Sher O Shayari. Most of the forms of Shayari are found in the Urdu language. However, one may find Shero Shayari in Hindi, Punjabi, etc. </p>
+<h3 align="center">Ustad Bismillah Khan</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ustad Bismillah Khan was undoubtedly a gem that India is proud of. This Shehnai maestro of India was a Bharat Ratna awardee and also has been awarded all the top four civilian awards namely Padma Shri, Padma Bhushan and Padma Vibhushan along with the Bharat Ratna.</p>
+<h3 align="center">Pandit Shivkumar Sharma</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pandit Shivkumar Sharma is a very famous classical musician who has acquired international fame by playing the classical instrument, Santoor. The Santoor is a trapezoid-shaped hammered dulcimer often made of walnut wood and has 72 strings, which are struck with two delicate carved wooden mallets.</p>
+<h3 align="center">Ustad Zakir Hussain</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Popularly known as Tabla Maestro, Ustad Zakir Hussain is the son of the renowned tabla player Ustad Allah Rakha. He was born on 9th March, 1951 and showed much interest in tabla since a very young age. This child prodigy started touring by the time he was twelve and started to perform at concerts and gain much recognition and fame.</p>
+<h3 align="center">Pandit Ravi Shankar</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pandit Ravi Shankar is a living legend who is a genius Sitar player. Born on 7th April, 1920 in Banaras, his family was a Bengali Brahmin family who named him Ravindra Shankar. Shyam Shankar, his father, was a barrister. He had an elder brother Uday Shankar who was a famous Indian classical dancer.</p>
+<h3 align="center">Indian Classical Singers</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The art of classical singing is being practiced in the Indian subcontinent since ages. The art is popular, not as a form of entertainment, but as a means of connecting with the Divine Being. Infact, it is considered as one of the basic ways through which a human being can connect with God. The distinct forms of melodies sung by classical singers are known as 'Ragas'. Some of these Ragas are said to have a divine quality in them, which helps an individual in meditating. In this section, we have provided a brief biography of the famous classical singers of India.</p> 
+<h3 align="center">Indian Singers</h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indian subcontinent is home to some of the best talents in every field, be it music, singing, painting, acting, and so on. These famous personalities have made the country proud at not only the national, but also international level. They have taken the rich art and culture of India beyond geographical boundaries. Special mention needs to be given in case of Indian singers, who have made Indian music famous throughout the world. Their soothing voice and poignant performance has stirred many hearts. This section gives a list of popular singers of India.</p> 
+</div>
+</body>
+</html>

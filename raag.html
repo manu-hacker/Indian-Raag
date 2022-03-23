@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+				*{
+	padding:0px;
+    margin:0px;
+font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+body{
+	background-image:url("bg2.jpg");
+    background-repeat:no-repeat;
+   background-size:100% 100%;
+    width: 100%;
+    height:all;
+}
+.menu{
+height: 100px;
+width: 100%;
+background-color:rgba(0,0,0,0.5);
+}
+.leftmenu{
+width: 20%;
+height: 100px;
+float: left;
+}
+.leftmenu h3 {
+padding-top:35px;
+font-size:30px;
+padding-left: 25px;
+font-family: 'Fjalla One', sans-serif;
+color: orange;
+}
+.rightmenu{
+width: 75%;
+height: 100px;
+float: right;
+}
+
+.rightmenu li {
+	list-style: none;
+	display: inline-block;
+	margin: 0px;
+list-style: none;
+font-size: 22px;
+margin-top: 30px;
+color:white;
+margin-left:45px;
+	
+}
+.rightmenu li a{
+	color:tomato;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display:none;
+	position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    min-width: 50px;
+    margin-left:-10px; 
+    border-bottom-right-radius:20px;
+     border-bottom-left-radius:20px;
+   margin-top:10px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1; 
+}
+.dropdown-content a{
+	color:white;
+	display: block;
+	text-decoration: none;
+	padding: 12px 16px;
+}
+.dropdown-content a:hover { background-color: (#ddd) }
+.dropdown:hover .dropdown-content {display: block}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.rightmenu  ul li .dropdown-content a:hover{
+background-color: orange;
+color: black;
+}
+.dropdown2{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content2{
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	min-width:75px;
+	height: 215px;
+	margin-left:-23px;
+	 border-bottom-right-radius:20px;
+     border-bottom-left-radius:20px;
+margin-top: 5px;
+box-shadow: 0px 18px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content2 a{
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding:12px 16px;
+
+}
+.dropdown-content2 a:hover { background-color: (#ddd) }
+.dropdown2:hover .dropdown-content2 {display: block}
+.dropdown2:hover .dropbtn2{background-color: #3e8e41;}
+.rightmenu  ul li  .dropdown-content2  a:hover{
+background-color: orange;
+color: black;
+}
+.dropdown3{
+	display: inline-block;
+position:relative;
+}
+.dropdown-content3{
+	display: none;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	position:absolute;
+	min-width: -50px;
+	margin-top: 13px;
+	box-shadow: 0px 18px 16px 0px  rgba(0,0,0,0.2);;
+	 border-bottom-right-radius:20px;
+     border-bottom-left-radius:20px;
+margin-left:-60px;
+}
+.dropdown-content3 a{
+	color: white;
+	display: block;
+text-decoration: none;
+padding: 12px 16px;
+}
+
+.dropdown-content3 a:hover { background-color: (#ddd) }
+.dropdown3:hover .dropdown-content3 {display: block}
+.dropdown3:hover .dropbtn3{background-color: #3e8e41;}
+.rightmenu  ul li  .dropdown-content3  a:hover{
+background-color: orange;
+color: black;
+}
+p{
+	color: white;
+	font-size: 20px;
+}
+
+.text{
+font-size:25px;
+color:tomato;
+text-align:center;
+}
+h2{
+	text-align:center;
+	font-size: 27px;
+	color: blue; 
+}
+</style>
+<body>
+
+		<div class="menu">
+			<div class="leftmenu"><h3>SWARBHARTIY</h3></div>
+		
+		<div class="rightmenu">
+		<ul>
+			<li><a href="main.html">Home</a></li>
+			<li><a href="raag.html">Raag</a></li>
+			<div class="dropdown">
+			<li class="dropbtn"><a href="">Instrument</a>
+
+								<div class="dropdown-content">
+                                     <a href="instrument/dhol.html">Dhol</a>
+                                     <a href="instrument/ektara.html">Ektara</a>
+                                     <a href="instrument/glassharp.html">Glassharp</a>
+                                     <a href="instrument/pungi.html">Pungi</a>
+                                     <a href="instrument/sarod.html">Sarod</a>
+                                     <a href="instrument/sitar.html">Sitar</a>
+                                     <a href="instrument/veena.html">Veena</a>
+                                      <a href="instrument/bansuri.html">Bansuri</a>                 
+                                      <a href="instrument/tabla.html">Tabla</a>       
+                                    </div>
+
+			</li>
+		</div>
+	
+			<div class="dropdown3"><li class="dropbtn3"><a href="">Song</a>
+<div class="dropdown-content3">
+<a href="song/petriotic.html">Petriotic</a>
+<a href="song/devotional.html">Devotional</a>
+<a href="song/instrumental.html">Instrumental</a>
+</div>
+			</li></div>
+			<li><a href="gallery/gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="https://docs.google.com/forms/d/1dQtDYrsWTHIUmy6tgLlAl78RQQ8hYILo_GAlfdJVnnc/edit">Feedback</a></li>
+		</ul>
+	</div>
+		
+	</div><h2>Something about raag</h2>
+<p>&nbsp;The previous section illustrated a few simple pentatonic ragas in an effort to show how you could get different melodies from sets of five notes. In this section, we will see how many other ways there are to group notes to form ragas, not just in terms of the number of notes, but also based on musical phrasing, or by combining two ragas to get a new raga, and so on. Again, I thought you might also find it interesting to learn something about the traditionally prescribed time for performing or enjoying a raga and the mood (rasa) or emotional content (bhāva) associated with it, and have accordingly provided a short description for each raga. My descriptions are mainly based on the mood traditionally assigned to the raga but I also go by my personal understanding and experience of it.</p>
+
+<div  class="text">Let's begin</div><br>
+
+<div  class="text"> Raag Marwa (hexatonic)</div>
+
+<p>Raag Marwa is sung during the late afternoon hours up to sunset. It is one of the major ragas in Hindustani classical music and is taken very seriously. One of the interesting things about Raag Marwa is that it de-emphasizes the tonic (sa) and excludes the perfect fifth (pa). This makes it a very unsettling raga, mainly evoking dark moods of foreboding and anxiety. It can also portray compassion or resignation in the face of some inner struggle.</p>
+<div  class="text">Raag Bhairav (heptatonic)</div>
+
+<p>Bhairav is another very important raga in the Hindustani classical tradition. It is a morning raga, and solemn peacefulness is its ideal mood. It is very easy, however, for this scale to deteriorate from peaceful to melodramatic, and artists must watch out for that. I think it was Ustad Vilayat Khan who once described Raag Bhairav as the music in the mind of Lord Shiva as he meditated in the Himalayas. That made an impression on me. Picture Shiva-the-terrible, absorbed in the deepest meditation in a dark cave in the Himalayas. Everything is still, except for the occasional dripping of a stalagtite. Then dawn breaks and the first rays of sunlight penetrate into the cave. Imagine the music in the mind of this man of terrifying passions at that time in his state of perfect peacefulness. And that, to me, is what Raag Bhairav should be.</p>
+<p>And now, a couple of ragas that can get away with using just about any note in the octave but still retain their distinctive personalities.</p>
+<div  class="text">Raag Pahadi</div>
+
+<p>Pahadi is an evening raga that combines both playful and pensive aspects. It has a very charming, folksy flavor. The notes S R G P D form the backbone of Raag Pahadi, which makes it a very close cousin of the pentatonic Raag Bhupali. The other notes of the octave are incorporated into this framework judiciously. Here is a simple sol-fa song to demonstrate a few typical note combinations. In this example I have only combined the nine most prominent notes used. The remaining notes are used only rarely and have to be done with the greatest care and expertise to retain the raga's identity.</p>   <div  class="text">Raag Bhairavi</div>   
+
+<p>Raag Bhairavi is a very important raga in both classical and semi-classical music. As in the case of Raag Pahadi, just about any note in the octave can be used in Raag Bhairavi, but its main structure comprises the notes S, r, g, m, P, d, and notice that all the main notes are flat. This gives the raga a very gentle quality. A small composition in Raag Bhairavi is often sung at the end of a long performance as a way of winding down.</p>
+<div  class="text">Asymmetrical Ragas</div>
+
+<p>A number of ragas are asymmetrical in ascent and descent. They use a different set of notes on the way up than they do on the way down. But what does this really mean? Well, for instance, if a note is used only in the descent, what this means is that it is always followed by a note lower than itself in the octave. For instance, in Raag Yaman, the note P is used only in the descent. So, it may be immediately followed by M, G, R or S, but not by D, N or S'. You may climb up to P on the way up: 'N R G M P. But if you want to climb further, you would have to climb down at least one step first: 'N R G M P, M D N. Of course, rules can sometimes be broken, but only by those who have mastered them first. Here are a couple of examples of asymmetrical ragas.</p>	
+
+<div  class="text">Raag Yaman</div>
+
+<p>Yaman is an evening raga, sung from sunset to late evening. It is full of grace and beauty, and the main mood it creates is one of devotion and dedication. It is a raga that suggests unconditional offering of everything one has at the altar of whatever one's calling may be, asking nothing in return.</p>
+<div  class="text">Raag Bhimpalasi</div>
+
+<p>An afternoon raga, sung from late afternoon to sunset, Bhimpalasi is poignant and passionate, filled with yearning.
+</p>
+
+<div  class="text">Compound Ragas</div>
+
+<p>Compound ragas are a fascinating group of ragas created by combining two existing ragas. The challenge here is to make sure that the final product is pleasing rather than disconcerting. There are two ways in which ragas can be combined. One way involves using a base raga and adding elements of another raga to it so that each raga retains its identity. The two ragas weave in and out playfully, keeping you constantly surprised. Another way of creating a compound raga is by using the notes of one raga and the phrasing or movement of a different raga.
+Raag Kaunsi-Kanada</p>
+
+<p>The late night Raag Kaunsi-Kanada is a delectable combination of Raag Malkauns and Raag Kanada, and is an example of the kind of compound raga in which the identities of both the constituent ragas are retained and weave in and out.</p>
+<div  class="text">Raag Megh</div>
+
+<p>Raag Megh (also called Megh Malhar) is a combination of Raag Madmaad Sarang and the Malhar group of rain ragas, is an example of the second kind of compound raga. Below, Sushree Savani Shende shows how Raag Megh expresses the Malhar (rain) ragas using the notes of Raag Madmaad Sarang.</p>
+<div  class="text">Circuitous Ragas</div>>
+
+<p>Circuitous ragas are characterized by the circuitous nature of their musical phrasing. The musical phrases in these ragas rarely ascend or descend in straight phrases. Here is an example of a circuitous raga.</p>
+<div  class="text">Raag Kedar</div>
+
+<p>Kedar is sung from late evening to midnight and is said to create a mood of peacefulness. I find, however, that this raga and its circular note combinations are beautifully suited also for creating a very playful mood. <br>                   <div class="text">Use of Microtones in Ragas</div>
+
+<p>In addition to the twelve notes in an octave, many ragas in Indian classical music use microtonal inflections. A subtle change in the microtone used, and the mood of a raga changes dramatically from playful to serious. Raag Darbari-Kanada, for instance, uses extra-flat versions of the notes g (minor third) and d (minor sixth), which make this raga more serious and heavy than its counterpart Jaunpuri. In the case of case of Miya-ki-Malhar, a slightly sharper version of g (minor third) and an extra-flat version of n (minor seventh) are used.</p>
+
+<P>There are other reasons why Darbari-Kanada and Miya-ki-Malhar are more serious than Jaunpuri and Bahar - the more powerful ornamentations used and the fact that they are sung mostly in the lower registers. Another important difference between the lighter ragas and their serious counterparts is their musical phrasing. Raag Jaunpuri and Bahar use short and crisp musical phrases that are resolved with regularity. Raag Darbari and Miya-ki-Malhar, however, deliberately create tension by using a large number of unresolved or partially-resolved musical phrases.</P>
+<p>As in the previous sections, I have provided a brief description of each raga including information on the traditionally prescribed time for performing or enjoying it and the mood (rasa) or emotional content (bhāva) associated with it. My descriptions are mainly based on the mood traditionally assigned to the raga but I also go by my personal understanding and experience of it.</p>
+<div  class="text">Raag Jaunpu</div>
+
+<p>Raag Jaunpuri is a very pretty, if somewhat plaintive, raga. Compared with its cousin, Raag Darbari, it has a distinctly feminine quality to it. It needs to be treated with a light touch and uses predominantly light ornamentation. This raga is sung in the late morning hours, up to noon or so.</p>
+<div class="text">Raag Darbari-Kanada</div>
+
+<p>Raag Darbari-Kanada is one of the most stately ragas in the Hindustani tradition. The first part of its name, Darbari, comes from the word darbar (the king's court), and the second part, Kanada, indicates that it is originally a Carnatic (south Indian) raga. Grave and majestic, this raga is best sung in a heavy bass voice during the late evening hours, and sometimes deep into night. It is characterized by its extensive use of powerful percussive ornamentation (gamak) and a slow lower-side oscillation on the g (minor third) and d (minor sixth) notes.</p>
+<div  class="text">Raag Bah</div>
+
+<p>Bahar means spring, and Raag Bahar is filled with the lightness and joyous celebration of springtime. It is sung throughout the spring season during the early afternoon hours and lends itself best to a lively tempo.</p>
+<div  class="text">Raag Miya-Ki-Malh</div>
+
+<p>Miya-Ki-Malhar is probably one of the most famous Indian ragas. "Malhar" means "cleanser of impurities" (indicating the rains) and all ragas that contain the word Malhar in their names are rain ragas. Imagine four months of relentlessly rising mercury, searing heat, dry dust storms during the day and suffocating airless nights. And then suddenly one day, black clouds gather in the horizon, the thunder rumbles and temperatures drop like lead as a cool wind swirls in dried leaves and twigs ahead of the first monsoon storm. The fragrance that rises as the first raindrops touch the scorched earth is indescribable, peacocks start to dance. That is when the Malhar ragas are sung. Miyan-Ki-Malhar can depict the joy and relief of the first rains, but on a dramatically contrasting note, it can also depict restless longing in separation and unnamed fears. Ornamentations are used to great effect in this raga to suggest the wind blowing, the thunder rumbling, and lightning cracking.</p>
+
+</div>
+</body>
+</html>
